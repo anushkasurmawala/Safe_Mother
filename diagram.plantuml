@@ -1,0 +1,34 @@
+@startuml  women-safety-app
+
+start
+:User Opens App;
+
+if (Emergency?) then (Yes)
+    :Trigger SOS;
+    if (Voice/Gesture Activated SOS?) then (Yes)
+        :Activate SOS using Voice/Gesture;
+    endif
+    :Send Live Location to Emergency Contacts;
+    :Trigger Fake Call/Message;
+    :Start Audio/Video Recording;
+    :Notify Police Officials;
+    :Send Emergency Notifications;
+    :Multi-Device Alert Activation;
+    :Real-time Tracking Enabled;
+    :Incident Report System Updates;
+else (No)
+    :User Accesses Other Features;
+    if (Geo-Fencing?) then (Yes)
+        :Set Safe Zones & Stay Locations;
+    endif
+    if (Safe Route?) then (Yes)
+        :Provide Safe Route Navigation;
+    endif
+    if (Chat with AI?) then (Yes)
+        :Initiate Chat Assistance;
+    endif
+endif
+
+stop
+
+@enduml

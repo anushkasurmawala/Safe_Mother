@@ -1,0 +1,18 @@
+- **Technology Stack**  
+  - React Native (Expo)  
+  - Firebase (Authentication, Firestore) 
+Expected Outcomes:	AI-powered systems for monitoring maternal health indicators. Predictive tools for identifying high-risk pregnancies. Increased access to healthcare resources for expectant mothers.
+
+Potential Impact:	Reduced maternal mortality rates. Improved health out comes for mothers and newborns. Enhanced efficiency in maternal health programs.
+following are the features 
+•	Risk prediction using ml (that code I'll provide you later)
+•	Real time alerts
+•	Doctor on demand 
+•	Emergency alert
+•	AI bot for 24/7 support for pregnancy related concerns
+•	Scan schedule 
+•	Exercise and yoga plans 
+•	After birth vaccine guide ( vaccine list for new born baby)
+•	Doctor appointment scheduler
+•	Medication and supplements reminder
+•	Patient Health Dashboard

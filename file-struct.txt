@@ -1,0 +1,166 @@
+maternal-health-app/
+│── .expo/                         # Expo-specific configurations
+│── .gitignore                      # Git ignore file
+│── app.json                        # Expo app configuration
+│── babel.config.js                 # Babel configuration
+│── package.json                     # Dependencies and scripts
+│── metro.config.js                  # Metro bundler configuration
+│── tsconfig.json                     # TypeScript configuration (if using TS)
+│── index.js                          # Entry point for React Native App
+│── App.js                            # Main component
+│
+├── **assets/**                      # Static assets
+│   ├── images/                      # Images for UI
+│   ├── icons/                        # Icons
+│   ├── fonts/                        # Custom fonts
+│
+├── **src/**                          # Main source code
+│   │
+│   ├── **api/**                      # API Calls and Firebase Services
+│   │   ├── firebaseConfig.js         # Firebase Configuration
+│   │   ├── auth.js                   # Authentication functions (login/signup/logout)
+│   │   ├── firestore.js              # Firestore database functions
+│   │   ├── notifications.js          # Push notifications and real-time alerts
+│   │   ├── aiBot.js                  # AI Chatbot integration
+│   │
+│   ├── **components/**               # Reusable UI components
+│   │   ├── Button.js                 # Custom button component
+│   │   ├── Card.js                   # Custom card component
+│   │   ├── Loader.js                 # Loading spinner
+│   │   ├── AlertBox.js               # Emergency Alert Box UI
+│   │   ├── HealthIndicator.js        # Component for showing maternal health indicators
+│   │   ├── RiskPrediction.js         # UI for ML-based risk prediction
+│   │
+│   ├── **screens/**                   # Screens for the app
+│   │   ├── Auth/                      # Authentication Screens
+│   │   │   ├── LoginScreen.js         # Login screen
+│   │   │   ├── SignupScreen.js        # Signup screen
+│   │   │   ├── ForgotPassword.js      # Password reset
+│   │   │
+│   │   ├── Dashboard/                 # Main Dashboard and related screens
+│   │   │   ├── DashboardScreen.js     # Patient Health Dashboard
+│   │   │   ├── ProfileScreen.js       # User Profile
+│   │   │   ├── HealthRecords.js       # Medical history and reports
+│   │   │
+│   │   ├── Features/                  # App core features
+│   │   │   ├── RiskPredictionScreen.js # Risk prediction UI
+│   │   │   ├── AlertsScreen.js         # Real-time alerts
+│   │   │   ├── DoctorOnDemand.js       # Doctor consultation
+│   │   │   ├── EmergencyAlert.js       # Emergency alert system
+│   │   │   ├── AIBotScreen.js          # AI chatbot for support
+│   │   │   ├── ScanScheduleScreen.js   # Pregnancy scan schedule
+│   │   │   ├── ExerciseScreen.js       # Yoga & exercise plans
+│   │   │   ├── VaccineGuideScreen.js   # After birth vaccine guide
+│   │   │   ├── AppointmentScheduler.js # Doctor appointment scheduler
+│   │   │   ├── MedicationReminder.js   # Medication reminders
+│   │
+│   ├── **navigation/**                 # Navigation system
+│   │   ├── AppNavigator.js             # Handles app-wide navigation
+│   │   ├── AuthNavigator.js            # Authentication flow
+│   │   ├── TabNavigator.js             # Bottom Tab Navigator
+│   │   ├── StackNavigator.js           # Stack-based navigation
+│   │
+│   ├── **context/**                    # Context API for global state management
+│   │   ├── AuthContext.js               # Auth state provider
+│   │   ├── UserContext.js               # User data provider
+│   │   ├── HealthContext.js             # Maternal health state provider
+│   │
+│   ├── **hooks/**                      # Custom hooks
+│   │   ├── useAuth.js                   # Custom hook for authentication
+│   │   ├── useHealthData.js             # Hook for health-related data fetching
+│   │   ├── useNotifications.js          # Hook for handling push notifications
+│   │
+│   ├── **utils/**                      # Utility functions
+│   │   ├── validators.js                # Input validators (email, password, etc.)
+│   │   ├── formatDate.js                # Date formatting functions
+│   │   ├── constants.js                 # Global constants
+│   │
+│   ├── **styles/**                      # Global styles
+│   │   ├── colors.js                     # Color palette
+│   │   ├── typography.js                 # Font styles
+│   │   ├── globalStyles.js               # Global styling
+│
+└── **firebase.json**                    # Firebase settings
+maternal-health-app/
+│── .expo/                         # Expo-specific configurations
+│── .gitignore                      # Git ignore file
+│── app.json                        # Expo app configuration
+│── babel.config.js                 # Babel configuration
+│── package.json                     # Dependencies and scripts
+│── metro.config.js                  # Metro bundler configuration
+│── tsconfig.json                     # TypeScript configuration (if using TS)
+│── index.js                          # Entry point for React Native App
+│── App.js                            # Main component
+│
+├── **assets/**                      # Static assets
+│   ├── images/                      # Images for UI
+│   ├── icons/                        # Icons
+│   ├── fonts/                        # Custom fonts
+│
+├── **src/**                          # Main source code
+│   │
+│   ├── **api/**                      # API Calls and Firebase Services
+│   │   ├── firebaseConfig.js         # Firebase Configuration
+│   │   ├── auth.js                   # Authentication functions (login/signup/logout)
+│   │   ├── firestore.js              # Firestore database functions
+│   │   ├── notifications.js          # Push notifications and real-time alerts
+│   │   ├── aiBot.js                  # AI Chatbot integration
+│   │
+│   ├── **components/**               # Reusable UI components
+│   │   ├── Button.js                 # Custom button component
+│   │   ├── Card.js                   # Custom card component
+│   │   ├── Loader.js                 # Loading spinner
+│   │   ├── AlertBox.js               # Emergency Alert Box UI
+│   │   ├── HealthIndicator.js        # Component for showing maternal health indicators
+│   │   ├── RiskPrediction.js         # UI for ML-based risk prediction
+│   │
+│   ├── **screens/**                   # Screens for the app
+│   │   ├── Auth/                      # Authentication Screens
+│   │   │   ├── LoginScreen.js         # Login screen
+│   │   │   ├── SignupScreen.js        # Signup screen
+│   │   │   ├── ForgotPassword.js      # Password reset
+│   │   │
+│   │   ├── Dashboard/                 # Main Dashboard and related screens
+│   │   │   ├── DashboardScreen.js     # Patient Health Dashboard
+│   │   │   ├── ProfileScreen.js       # User Profile
+│   │   │   ├── HealthRecords.js       # Medical history and reports
+│   │   │
+│   │   ├── Features/                  # App core features
+│   │   │   ├── RiskPredictionScreen.js # Risk prediction UI
+│   │   │   ├── AlertsScreen.js         # Real-time alerts
+│   │   │   ├── DoctorOnDemand.js       # Doctor consultation
+│   │   │   ├── EmergencyAlert.js       # Emergency alert system
+│   │   │   ├── AIBotScreen.js          # AI chatbot for support
+│   │   │   ├── ScanScheduleScreen.js   # Pregnancy scan schedule
+│   │   │   ├── ExerciseScreen.js       # Yoga & exercise plans
+│   │   │   ├── VaccineGuideScreen.js   # After birth vaccine guide
+│   │   │   ├── AppointmentScheduler.js # Doctor appointment scheduler
+│   │   │   ├── MedicationReminder.js   # Medication reminders
+│   │
+│   ├── **navigation/**                 # Navigation system
+│   │   ├── AppNavigator.js             # Handles app-wide navigation
+│   │   ├── AuthNavigator.js            # Authentication flow
+│   │   ├── TabNavigator.js             # Bottom Tab Navigator
+│   │   ├── StackNavigator.js           # Stack-based navigation
+│   │
+│   ├── **context/**                    # Context API for global state management
+│   │   ├── AuthContext.js               # Auth state provider
+│   │   ├── UserContext.js               # User data provider
+│   │   ├── HealthContext.js             # Maternal health state provider
+│   │
+│   ├── **hooks/**                      # Custom hooks
+│   │   ├── useAuth.js                   # Custom hook for authentication
+│   │   ├── useHealthData.js             # Hook for health-related data fetching
+│   │   ├── useNotifications.js          # Hook for handling push notifications
+│   │
+│   ├── **utils/**                      # Utility functions
+│   │   ├── validators.js                # Input validators (email, password, etc.)
+│   │   ├── formatDate.js                # Date formatting functions
+│   │   ├── constants.js                 # Global constants
+│   │
+│   ├── **styles/**                      # Global styles
+│   │   ├── colors.js                     # Color palette
+│   │   ├── typography.js                 # Font styles
+│   │   ├── globalStyles.js               # Global styling
+│
+└── **firebase.json**                    # Firebase settings
